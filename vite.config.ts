@@ -94,7 +94,8 @@ export default defineConfig((config) => {
       target: 'esnext',
     },
     server: {
-      host: '0.0.0.0', // Make it accessible on all hosts
+      host: '0.0.0.0', // Make it accessible on all hosts,
+      allowedHosts: 'all'
     },
     plugins: [
       nodePolyfills({
