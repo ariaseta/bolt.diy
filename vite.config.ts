@@ -93,6 +93,9 @@ export default defineConfig((config) => {
     build: {
       target: 'esnext',
     },
+    server: {
+      host: '0.0.0.0', // Make it accessible on all hosts
+    },
     plugins: [
       nodePolyfills({
         include: ['path', 'buffer', 'process'],
